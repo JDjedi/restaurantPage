@@ -1,14 +1,10 @@
-import React from 'react';
-import { withTracker } from 'meteor/react-meteor-data';
-import NewYork from './newYork';
-import Cheese from './cheese';
-import TheWorks from './theWorks';
-
-
+import React from "react";
+import { withTracker } from "meteor/react-meteor-data";
+import NewYork from "./newYork";
+import Cheese from "./cheese";
+import TheWorks from "./theWorks";
 
 export default class App extends React.Component {
-
-
 	render() {
 		return (
 			<div className=".col-12" id="container-main">
@@ -25,8 +21,6 @@ export default class App extends React.Component {
 					</div>
 				</div>
 			</div>
-		)
+		);
 	}
 }
-
-

@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default class NewYorkPizza extends React.Component {
-
 	constructor(props) {
 		super(props);
 		this.state = {
-			isHidden: true,
+			isHidden: true
 		};
 	}
 
@@ -13,27 +12,22 @@ export default class NewYorkPizza extends React.Component {
 		x.preventDefault();
 		const { isHidden } = this.state;
 		this.setState({
-			isHidden: !isHidden,
+			isHidden: !isHidden
 		});
 	}
 
 	render() {
 		return (
 			<div id="the-new-York">
-				<img src='./images/newYork.jpg' />
+				<img src="./images/newYork.jpg" />
 				<p id="pizza-name">The New York Style 5 Cheese and Pepperoni</p>
-				<button onClick={this.showPizzaDetails.bind(this)}>
-					Show Details
-				</button>
+				<button onClick={this.showPizzaDetails.bind(this)}>Show Details</button>
 				{!this.state.isHidden && <PizzaDetails />}
 			</div>
-		)
+		);
 	}
 }
 
 const PizzaDetails = () => (
-	<div id="pizza-details">
-		Cras aliquet urna ut sapien tincidunt!
-	</div>
-)
-
+	<div id="pizza-details">Cras aliquet urna ut sapien tincidunt!</div>
+);
