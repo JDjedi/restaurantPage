@@ -22,7 +22,7 @@
 .col-12 {width: 100%;}
 
 
-p#pizza-name {
+#dd-header-title {
  text-align: center;
 }
 
@@ -36,4 +36,30 @@ p#pizza-name {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+#the-new-York {
+	text-align: center;
+}
+
+#detail-info {
+	text-align: center;
+}
+
+#image-carousel {
+  height:100%;
+  margin: 0;
+  width: 100%;
+}
+
+#next-back-buttons {
+  text-align: center;
+}
+
+#carousel-slider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 75%;
 }

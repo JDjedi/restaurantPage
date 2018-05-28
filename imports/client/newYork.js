@@ -19,15 +19,25 @@ export default class NewYorkPizza extends React.Component {
 	render() {
 		return (
 			<div id="the-new-York">
-				<img src="./images/newYork.jpg" />
-				<p id="pizza-name">The New York Style 5 Cheese and Pepperoni</p>
-				<button onClick={this.showPizzaDetails.bind(this)}>Show Details</button>
-				{!this.state.isHidden && <PizzaDetails />}
+				<img src="./images/newYork.jpg" onClick={this.showPizzaDetails.bind(this)}/>
+				<p id="detail-info">Click for more info</p>
+				<div id="pizza-details">
+					{!this.state.isHidden && <PizzaDetails />}
+				</div>
 			</div>
 		);
 	}
 }
 
 const PizzaDetails = () => (
-	<div id="pizza-details">Cras aliquet urna ut sapien tincidunt!</div>
+	<div className="dd-wrapper">
+	  <div className="dd-header">
+	    <div id="dd-header-title">The New York Style 5 Cheese and Pepperoni</div>
+	  </div>
+	  <ul className="dd-list">
+	    <li className="dd-list-item">Cras aliquet urna ut sapien tincidunt!</li>
+	    <li className="dd-list-item">Urna ut sapien tincidunt!</li>
+	    <li className="dd-list-item">Aliquet urna ut sapien tincidunt!</li>
+	  </ul>
+	</div>
 );

@@ -7,8 +7,10 @@
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.42",
     "meteor-node-stubs": "^0.3.2",
+    "pure-react-carousel": "^1.12.2",
     "react": "^15.6.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-image-carousel": "^2.0.18"
   },
   "devDependencies": {
     "file-loader": "^1.1.11",
